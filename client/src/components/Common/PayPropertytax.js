@@ -37,7 +37,7 @@ function PayPropertyTax() {
   };
   
   const handlePayNow = async() => {
-    const stripe = await loadStripe("pk_test_51Ph5HV2MW3uATXl1wb1lShtOekVQD01SK4HSAwsIt2TdMA1sP9bxF6wfc4JAOAOEPPMeYDCEYk2AS0RjFhkp1aGK00muArA1xf");
+    const stripe = await loadStripe(/*your publisher key*/);
     
     // Ensure combinedata is an array
     const body = { products: combinedata || [], pid: pid };

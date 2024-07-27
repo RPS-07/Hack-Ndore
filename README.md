@@ -28,17 +28,17 @@ Welcome to the Revenue Collection and Management System for municipal corporatio
 ### Steps
 
 1. _Clone the Repository_:
-   sh
+   ```sh
    git clone https://github.com/RPS-07/Hack-Ndore.git
    cd Hack-Ndore
 2. **Head to the client folder**:
-   sh
+   ```sh
    cd client
 3. _Install the Dependencies_:
-   sh
+   ```sh
    npm install
 4. **Configure Environment Variables(in Server Folder)**:
-   sh
+   ```sh
    MAIL_HOST=
    JWT_SECRET=
    FOLDER_NAME=
@@ -49,11 +49,11 @@ Welcome to the Revenue Collection and Management System for municipal corporatio
    API_SECRET=
    STRIPE_SECRET_KEY=
 5. _Head to Server Folder and initialize MongoDB Server_:
-   sh
+   ```sh
    cd ..
    cd server
    node index.js(OR)
    nodemon
 6. **Initializing React Development Server**:
-   sh
+   ```sh
    npm start

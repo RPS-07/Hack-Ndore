@@ -17,7 +17,7 @@ function Home() {
 <Link to={"/signup"}>
     <div className=' group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit'>
         <div className='flex flex-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900'>
-            <p>Become an IMC</p>
+            <p>Become an IMC Member</p>
            <FaArrowRight/>
         </div>
     </div>
@@ -77,10 +77,10 @@ Access your tax information anytime, anywhere. With our user-friendly interface 
 
 
 </div>
-<ExploreMore/>
+{/* <ExploreMore/> */}
       </div>
 
-<div className='bg-pure-greys-5 text-richblack-700'>
+{/* <div className='bg-pure-greys-5 text-richblack-700'>
 <div className='homepage_bg h-[310px]'>
 <div className='w-11/12 max-w-maxContent flex flex-col items-center gap-5 mx-auto justify-between'>
 <div className='h-[150px]'></div>
@@ -121,13 +121,14 @@ Get the Skills you need for a <HighlightText text={"job that is in demand"}/>
 </div>
 
 
-</div>
+</div> */}
 
-
+{/* 
 <div className='w-11/12 mx-auto max-w-maxContent flex-col items center justify-between gap-8 bg-richblack-900 text-white'>
 <InstructorSection/>
-<h2 className='text-center text-4xl font-semibold mt-10'>review from other Learners</h2>
-</div>
+</div> */}
+
+{/* <h2 className='text-center text-4xl font-semibold mt-10'>review from other Learners</h2> */}
 <Footer/>
 
 </div>

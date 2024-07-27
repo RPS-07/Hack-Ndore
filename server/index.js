@@ -1,7 +1,7 @@
 const express=require("express");
 const app=express();
 const userRoutes=require("./routes/User");
-const stripe=require("stripe")(/*"your_stripe_key"*/);
+const stripe=require("stripe")("sk_test_51Ph5HV2MW3uATXl1zCGGpcdHWhsEv4Q5yXXRHhobKVdbFiUzpjReCF3sfuvC4oUrPGtX34fp9C56uQcQzXgLAknV00iD7IxeIO");
 const propertytaxroutes=require("./routes/Propertytaxrouter");
 const profileRoutes=require("./routes/Profile");
 const paymentRoutes=require("./routes/User");

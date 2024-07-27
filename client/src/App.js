@@ -25,10 +25,12 @@ import Recentpayment from "./components/Common/Recentpayment";
 import Watertax from "./components/Common/Watertax";
 import Complaint from "./components/Common/Complaint";
 import Onlinebuildingplan from "./components/Common/Onlinebuildingplan";
+//import Marquee from "./components/Common/Marque";
 function App() {
   return (
     <div className="w-screen min-h-screen  bg-richblack-900 flex  flex-col font-inter">
     <Navbar/>
+    
 <Routes>  
   <Route path="/" element={<Home/>}/>
   <Route path="/login" element = {  <Login />  } />
@@ -59,6 +61,7 @@ function App() {
       <Route path="/complaint" element={<Complaint/>} />
       <Route path="/onlinebuilding" element={<Onlinebuildingplan/>} />
 </Routes>
+<Chat/>
     </div>
   );
 }

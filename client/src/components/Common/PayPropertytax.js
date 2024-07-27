@@ -37,7 +37,7 @@ function PayPropertyTax() {
   };
   
   const handlePayNow = async() => {
-    const stripe = await loadStripe(/*your publisher key*/);
+    const stripe = await loadStripe("pk_test_51Ph5HV2MW3uATXl1wb1lShtOekVQD01SK4HSAwsIt2TdMA1sP9bxF6wfc4JAOAOEPPMeYDCEYk2AS0RjFhkp1aGK00muArA1xf");
     
     // Ensure combinedata is an array
     const body = { products: combinedata || [], pid: pid };
@@ -197,22 +197,16 @@ function PayPropertyTax() {
   ];
 
   return (
-    <div className="App">
-      <h2>Property Tax</h2>
+    <div className="Appdd">
       <div className="form-container">
-        <div className="tab">
+        {/* <div className="tab">
           <button className="tablinks">Search Property</button>
           <button className="tablinks">Search Application</button>
-        </div>
+        </div> */}
         <div className="form-content">
           <h3>Search Property</h3>
-          <p>
-            Provide at least one non-mandatory parameter to search for an
-            application (In case of search by locality and name, please select
-            city name again)
-          </p>
           <div className="form-group">
-            <label>ULB *</label>
+            <label>ULB</label>
             <select value={city} onChange={(e) => setCity(e.target.value)}>
               <option value="">Select City</option>
               {citiesOfMadhyaPradesh.map((city) => (
@@ -223,7 +217,7 @@ function PayPropertyTax() {
             </select>
           </div>
           <div className="form-group">
-            <label>Existing Property ID</label>
+            <label>Property ID*</label>
             <input
               type="text"
               value={propertyId}
@@ -240,7 +234,6 @@ function PayPropertyTax() {
               placeholder="Enter your mobile No."
             />
           </div>
-    
           <div className="form-group">
             <label>Locality/Mohalla</label>
             <select
@@ -270,9 +263,9 @@ function PayPropertyTax() {
           </div>
         </div>
       </div>
-      {taxAmount !== null && (
-        <div>
-          <h3 style={{color:'green'}}>Generated Tax Amount: {taxAmount}</h3>
+      {taxAmount.length > 0 && (
+        <div className="table-container">
+          <h3 className="success-message">Generated Tax Amount: {taxAmount.join(", ")}</h3>
           <table>
             <thead>
               <tr>
@@ -287,21 +280,21 @@ function PayPropertyTax() {
                 <td>{propertyId}</td>
                 <td>{ownerName}</td>
                 <td>{mobileNo}</td>
-                <td> <button className="pay-now-btn" onClick={handlePayNow}>
-                    <h2 style={{color:'blue'}}>Pay Now</h2> {taxAmount}
-                  </button></td>
+                <td>
+                  <button className="pay-now-btn" onClick={handlePayNow}>
+                    <h2>Pay Now</h2> {taxAmount.join(", ")}
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       )}
       {error && (
-        <div>
-          <h3 style={{ color: 'red' }}>Error: {error}</h3>
+        <div className="error-message">
+          <h3>Error: {error}</h3>
         </div>
       )}
-
-
       {showAlert && <Alert taxAmount={taxAmount} onClose={() => setShowAlert(false)} />}
     </div>
   );

@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Receipt from './Receipt';
+import { CSSTransition } from 'react-transition-group';
+import './Receipt3.css'; // Import the CSS file
 
-const Receipt1= () => {
+const Receipt1 = () => {
   const [propertyId, setPropertyId] = useState(''); // State to hold the property ID input
   const [showReceipt, setShowReceipt] = useState(false); // State to control when to show the receipt
 
@@ -11,7 +13,7 @@ const Receipt1= () => {
   };
 
   return (
-    <div className="App">
+    <div className="Appd">
       <h1>Property Payment Receipt</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -26,8 +28,17 @@ const Receipt1= () => {
         <button type="submit">Get Receipt</button>
       </form>
 
-      {showReceipt && <Receipt pid={propertyId} />}
+      <CSSTransition
+        in={showReceipt}
+        timeout={500}
+        classNames="receipt"
+        unmountOnExit
+      >
+        <Receipt pid={propertyId} />
+      </CSSTransition>
     </div>
   );
 };
+
 export default Receipt1;
+

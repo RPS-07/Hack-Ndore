@@ -1,10 +1,10 @@
-.Appi {
+.paras {
     text-align: center;
     font-family: Arial, sans-serif;
+    /* border: 2px solid red; */
   }
   
   .Appi-header {
-    background-image: url("https://media.istockphoto.com/id/668729904/photo/jahaz-mahal-ship-palace-in-mandu-india.jpg?s=2048x2048&w=is&k=20&c=Y60B37bnmlXn7To7Z-9F3wCfwS3-crCFnczIpUv3ev4=");
     min-height: 100vh;
     color: #333;
     display: flex;
@@ -30,7 +30,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    font-size: 1.3em;
+    /* border: 2px solid red; */
+    /* font-size: 1.3em; */
   }
   
   .navbar-list li {
@@ -41,11 +42,11 @@
   
   .header-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: space-evenly;
     width: 100%;
-    padding: 10px 20px;
-    background-color: #333;
+    /* padding: 10px 20px; */
+    background-color: #000814;
     color: #fff;
   }
   
@@ -61,8 +62,10 @@
     height: 50px; /* Adjust as needed */
     width: auto;
   }
-  
-  .dashboard {
+
+
+  .dashboardParas {
+   
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -81,7 +84,7 @@
     flex: 1;
     font-size: larger;
     padding: 20px;
-    background-color: bisque;
+    background-color: #ececec;
     background-size: cover;
     background-position: center;
     border-radius: 8px;
@@ -152,3 +155,18 @@
     margin: 10px 0;
   }
   
+
+  .parasheader{
+    background-image: url("https://media.istockphoto.com/id/668729904/photo/jahaz-mahal-ship-palace-in-mandu-india.jpg?s=2048x2048&w=is&k=20&c=Y60B37bnmlXn7To7Z-9F3wCfwS3-crCFnczIpUv3ev4=");
+    background-size: cover;
+  }
+
+  .paras {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    /* border: 2px solid red; */
+    
+    background-image: url("https://media.istockphoto.com/id/668729904/photo/jahaz-mahal-ship-palace-in-mandu-india.jpg?s=2048x2048&w=is&k=20&c=Y60B37bnmlXn7To7Z-9F3wCfwS3-crCFnczIpUv3ev4=");
+    /* background-position: f; */
+    background-size: cover;
+  }

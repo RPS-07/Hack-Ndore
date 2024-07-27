@@ -34,7 +34,7 @@ function MyProfile() {
           <li><Link to="/watertax">Water Tax</Link></li>
         </ul>
       </nav>
-        <div className="content">
+        <div className="contentDasvir">
           <section className="services">
             <Link to="/watertax"><div className="service-card">Water Tax</div></Link>
             <Link to="/watertax"><div className="service-card">Garbage Tax</div></Link>

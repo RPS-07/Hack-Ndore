@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
-//piecharts integration
 import "./Appdash.css";
 import { Link } from "react-router-dom";
 
@@ -159,12 +158,12 @@ function Admindashboard() {
       <section className="Main-header">
         <div className="header-container">
           <div className="headlogo">
-            <img
+            {/* <img
               className="logo-image"
               src="https://media.umangapp.in/app/ico/service/mp_mobile.png"
               alt=""
-            />
-            <h2>Revenue Management System</h2>
+            /> */}
+            {/* <h2>Revenue Management System</h2> */}
           </div>
           <div>
             <ul className="navbar-list">
@@ -178,11 +177,11 @@ function Admindashboard() {
           </div>
         </div>
       </section>
-      <div className="Appi">
-        <header className="Appi-header">
-          <h1>Municipal Revenue Management System</h1>
+      <div className="paras">
+        <header className="Appi-header parasheader">
+          <h1 className="pb-4 text-richblack-700">Municipal Revenue Management System</h1>
 
-          <div className="dashboard">
+          <div className="dashboardParas">
             <div className="pie-chart-container">
               <PieChart width={400} height={400}>
                 <Pie
@@ -206,7 +205,7 @@ function Admindashboard() {
             </div>
 
             <section className="admin-box">
-              <h2>Admin Portal</h2>
+              <h2 className="text-richblack-700">Admin Portal</h2>
               <div className="filters">
                 <label>
                   Locality:
@@ -269,3 +268,4 @@ function Admindashboard() {
 
 export default Admindashboard;
 
+// text-richblack-700

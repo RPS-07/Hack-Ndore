@@ -37,9 +37,8 @@ function Navbar() {
     <div className='flex h-14 items-center justify-center border-b-[1px] border-b-richblack-700'>
       <div className='flex w-11/12 max-w-maxContent items-center justify-between'>
 <Link to="/">
-    <img src={logo} alt="" width={70} height={50} loading='lazy'/>
+    <img src={logo} alt="" width={100} height={50} loading='lazy'/>
 </Link>
-
 <nav>
     <ul className='flex gap-x-6 text-richblack-25'>
 {

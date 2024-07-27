@@ -19,7 +19,7 @@ createdAt:{
 async function sendVerificationEmail(email,otp){
     try{
         console.log("hiii email",email);
-        const mailResponse=await mailSender(email,"Verification Email from StudyNotion",otpTemplate(otp));
+        const mailResponse=await mailSender(email,"Verification Email from IMC INDORE",otpTemplate(otp));
         console.log("Email sent Succesfully",mailResponse);
     }
     catch(error){

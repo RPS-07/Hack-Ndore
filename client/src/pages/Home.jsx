@@ -31,7 +31,7 @@ Access your tax information anytime, anywhere. With our user-friendly interface 
         </div>
 <div className='flex flex-row gap-7 mt-8'>
 <Button active={true}><Link to="/chat">Explore Chatbot</Link></Button>
-<Button active={false} linkto={"/signup"}>Avail a Services</Button>
+<Button active={false} linkto={"/signup"}>Avail Services</Button>
 </div>
 <div className="mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200">
             <video muted loop autoPlay className = "shadow-[20px_20px_rgba(255,255,255)]"> <source src = {Banner} type = "video/mp4"/> </video>
